@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    margin: 0px 166px;
+
+}
+.header {
+    background-image: url(hero.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header_line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    margin-right: 25px;
+    transition: color 0.4s linear;
+
+}
+.nav-item:hover {
+    color: red;
+}
+.cart {
+    position: relative;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    height: 50px;
+}
+.cart-img {
+    position: absolute;
+    top: 18px;
+    right: 7px;
+
+}
+.num {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.4s linear;
+
+}
+.num:hover{
+    color: red;
+}
+.phone-text {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+
+}
+.font-holder {
+    display: flex;
+    align-items: center;
+}
+.button {
+    background-color: rgba(255, 116, 0, 1);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px ;
+    font-weight: 700;
+    transition: background-color 0.4s linear;
+
+}
+.button:hover {
+    background-color: rgb(96, 66, 11);
+}
+.header-down{
+    position: relative; 
+}
+.header-title {
+    color: rgba(214, 126, 53, 1);
+    font-family: 'Tinos', serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    margin-top: 222px;
+    margin-bottom: 13px;
+
+}
+.header-suptitle {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.header-suptitle::after {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    width: 61px;
+    top: 127px;
+    left: 56px;
+}
+.header-suptitle::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    width: 61px;
+    top: 127px;
+    left: 308px;
+}
+.header-button {
+    background-color: rgba(255, 116, 0, 1);
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+
+}
+.header-button:hover {
+    background-color: rgb(140, 66, 5);
+}
+.cards-holder {
+    display: flex;
+    justify-content: center;
+    
+}
+.card {
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    width: 349px;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -80px;
+    padding: 10px 10px;
+
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.card-title span {
+    color: rgba(214, 126, 53, 1);
+}
+.card-desc {
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: rgba(101, 99, 99, 1);
+
+}
+.history {
+    margin-top: 166px;
+}
+.history-title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-top: 21px;
+
+}
+.history-title span {
+    color: rgba(214, 126, 53, 1);
+}
+.history-desc {
+    color: rgba(101, 99, 99, 1);
+    font-size: 16px;
+    width: 444px;
+    text-align: center;
+
+
+}
+.history-number {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+.number-item {
+    margin-right: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(214, 126, 53, 1);
+}
+.number-item span {
+    display: block;
+    color: #000;
+}
+.history-holder {
+    display: flex;
+   
+}
+.history-images {
+    position: relative;
+}
+.images-1 {
+    position: absolute;
+    z-index: 0;
+    top: 54px;
+    left: 211px;
+}
+.images-2 {
+    position: absolute;
+    z-index: 999;
+    top: -92px;
+    left: 383px;
+}
+.images-3 {
+    position: absolute;
+    z-index: 999;
+    top: 246px;
+    left: 481px;
+}
+.pos {
+    color: rgb(201, 32, 32);
+}

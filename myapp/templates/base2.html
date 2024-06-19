@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base2.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<div class="sa">
+    <div class="container">
+        <div class="header_line">
+            <div class="header_logo">
+                <img src="{% static 'css/logo.png' %}" alt="">
+            </div>
+            
+            <div class="nav">
+            {% for i in chab %}
+                    <a class="nav-item" href="{% url i.url_name %}">{{ i.title }}</a>
+                    
+                    {% comment %} <a class="nav-item" href="{% url i.url_name %}">{{ i.title }}</a> {% endcomment %}
+            {% endfor %}
+             
+            
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <img class="cart-img" src="{% static 'css/cart.png' %}" alt="">
+                </a>
+            </div>
+            <div class="phone">
+                <div class="font-holder">
+                    <div class="phone-img">
+                        <img src="{% static 'css/phone.png' %}" alt="">
+                    </div>
+                    <div class="number"><a class="num" href="#">+999-888-76-54</a></div>
+                </div>
+                <div class="phone-text">
+                    Свяжитесь с нами для <br> бронирования
+
+                </div>
+            
+            </div>
+            <div class="btn">
+                <a class="button" href="#">Заказ столика</a>
+            </div>
+
+        </div>
+       
+
+
+    </div>
+    <div class="glav_category">
+        <div class="header-category">
+            <div class="category">
+                {% for c in all_category %}
+
+                <li><a class="cat" href="{{ c.get_absolute_url }}">{{c.name}}</a></li>
+                
+  
+                {% endfor %}
+            </div>
+            <div class="post">
+                {% block zzz %}
+                {% endblock zzz %}
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

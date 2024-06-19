@@ -1,0 +1,15 @@
+{% extends  'base2.html' %}
+{% load static %}
+
+
+{% for p in all_posts %}
+<li><div class="article-panel">
+<p class="first">категория: {{p.cat}}</p>
+<p class="last">Дата :{{p.time_update}}</p>
+</div>
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.content | linebreaks | truncatewords:20 }}</p>
+    <div class="clear"></div>
+    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать</a></p>
+</li>
+{% endfor %}

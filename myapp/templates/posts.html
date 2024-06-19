@@ -1,0 +1,17 @@
+{% extends  'base2.html' %}
+{% load static %}
+{% block zzz %}
+
+
+<div class="post">
+    <div class="article-panel">
+        <p class="first">Категория: {{ post.category.name }}</p>
+        <p class="last">Дата: {{ post.time_update }}</p>
+    </div>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content | linebreaks }}</p>
+    <div class="clear"></div>
+    <p class="link-read-post"><a href="{{ post.get_absolute_url }}">Читать</a></p>
+</div>
+
+{% endblock zzz %}
