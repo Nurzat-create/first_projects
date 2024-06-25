@@ -3,16 +3,26 @@
 
 {% block zzz %}
 
-< {% for p in all_posts %}
-<li><div class="article-panel">
-<p class="first">категория: {{p.category}}</p>
-<p class="last">Дата :{{p.time_update}}</p>
-</div>
-    <h3>{{ p.title }}</h3>
-    <p>{{ p.content | linebreaks | truncatewords:20 }}</p>
-    <div class="clear"></div>
-    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать</a></p>
-</li>
-{% endfor %}
+{% for p in all_posts %}
+<div class="dc">
 
+<!-- <p class="first">категория: {{p.cat}}</p>
+<p class="last">Дата :{{p.time_update}}</p> -->
+
+<div class="clear">
+    
+    {% if p.photo %}
+    <div class="bobo"><img class="bebra" src="{{ p.photo.url }}" alt=""></div>
+    {% else %}
+    <h1>''</h1>
+    {% endif %}
+    
+    <div class="aboba"><h3>{{ p.title }}</h3>
+    <p>{{ p.content | linebreaks | truncatewords:20 }}</p>
+    <p>{{ p.price }}</p>
+    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать</a></p></div>
+    </div>
+    
+</div>
+{% endfor %}
 {% endblock zzz %}
